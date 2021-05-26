@@ -165,6 +165,32 @@ window.onload = () => {
   img1.onload = function () {
     ctx.drawImage(this, 10, 10, 237, 261);
     ctx.drawImage(this, 100, 100, 237, 261);
+    ctx.fillStyle = 'rgba(255,0,0,0.5)';
+    //arc(x,y,raio,angulo inicial, angulo final)
+    ctx.beginPath();
+    ctx.arc(300, 200, 50, 0, Math.PI * 2);
+    ctx.fill();
+    // ctx.stroke();
+    // create radial
+    var gradiente = ctx.createLinearGradient(0, 0, 0, 550);
+    gradiente.addColorStop(0, 'red');
+    gradiente.addColorStop(0.4, 'khaki');
+    gradiente.addColorStop(0.6, 'lightBlue');
+
+    ctx.fillStyle = gradiente;
+    ctx.lineWidth = '5';
+    //rect x,y,largura,altura
+    ctx.fillRect(400, 100, 150, 250);
+    ctx.strokeRect(400, 100, 150, 250);
+    ctx.fillStyle = 'white';
+    ctx.font = '20px Georgia';
+    ctx.fillText('Eita! tá brabo ?', 410, 130);
+    // ctx.fillStyle="white";
+    // ctx.font="50px Georgia";
+    // ctx.fillText("Eita!",415,150);
+    // ctx.font="25px Georgia";
+    // ctx.fillStyle="brown";
+    // ctx.fillText("Tá Brabo?",415,210);
   };
 
   //

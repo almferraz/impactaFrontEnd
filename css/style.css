@@ -304,6 +304,11 @@ div.c3 {
 .menuGaleria a {
   cursor: pointer;
 }
+.estilo1 {
+  color: brown;
+  font: 15px Georgia;
+  text-transform: uppercase;
+}
 
 /* Tags e Composição //////////////*/
 canvas {

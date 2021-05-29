@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png"> -->
+  <link rel="icon" type="image/png" href="../imagens/logo.svg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Front End Imapacta</title>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<style>
+  h3 {
+    color: darkblue;
+  }
+
+  nav {
+    position: fixed !important;
+    width: 100vw;
+    top: 0;
+  }
+
+  header img.w-25 {
+    width: 25vh !important;
+
+  }
+
+  .menu-hb {
+    display: none;
+  }
+
+  @media (max-width:996px) {
+    nav {
+      width: 50%;
+      position: absolute !important;
+      right: 0;
+      top: 3.5%;
+      border-radius: 10px 0 0 10px;
+      z-index: 1;
+      display: none;
+    }
+
+    .menu-hb {
+      display: block;
+      position: absolute;
+      top: 5%;
+      right: 3%;
+      z-index: 2;
+    }
+
+    nav.navbar {
+      display: none;
+      padding-left: 15px;
+    }
+  }
+</style>
+
+<!-- Conteúdo da Página -->
+
+<body>
+  <header class="bg-success">
+    <i class="fas fa-bars fa-2x text-white menu-hb"></i>
+    <!-- <i class="fas fa-bars"></i> -->
+    <p class="fw-bold text-center"> Seja bem vindo a nossa aula !</p>
+    <a target="_blank" href="http://www.submarino.com.br">SUBMARINO</a>
+    <img src="../imagens/logo.png" alt="" class="w-50 mx-auto d-block">
+    <p id="bemvindo">xxxxxx</p>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <ul class="navbar-nav mx-auto">
+      <li class="item"><a class="nav-link" href="../index.html">Home</a></li>
+      <li class="item"><a class="nav-link" href="imagens.html">Imagens</a></li>
+      <li class="item"><a class="nav-link" href="animacao.html">Animação CSS</a></li>
+      <li class="item"><a class="nav-link" href="bootstrap.html">BootStrap</a></li>
+      <li class="item"><a class="nav-link" href="jquery.html">Jquery</a></li>
+      <li class="item"><a class="nav-link" href="tabelas.html">Tabelas</a></li>
+      <li class="item"><a class="nav-link active">Formulários</a></li>
+      <li class="item"><a class="nav-link" href="localstorage.html">LocalStorage</a></li>
+      <li class="item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+      <li class="item"><a class="nav-link" href="diagramacao.html">Diagramação</a></li>
+
+
+    </ul>
+  </nav>
+  <div class="conteudo container">
+    <section>
+      <h1>Formulários e Tabelas</h1>
+      <article>
+        <h2 class="m-4">Tabelas</h2>
+        RECURSOS
+
+        ÍCONE HAMBURGUER//////////////////
+
+        <i class="fas fa-bars"></i>
+
+
+
+        LISTA DE TAREFAS///////////////
+
+        <div id="tasklist" class="w-25 m-5 mx-auto border border-primary rounded" style="min-height:200px;">
+          <p class="fw-bold fs-4 p-4">Lista de Tarefas</p>
+          <ol id="tarefas">
+            <li>...</li>
+          </ol>
+          <button class="btn btn-secondary d-block mx-auto">Criar Lista</button>
+        </div>
+
+
+        TABELAS////////////////////////
+
+        <table class="table table-bordered table-info w-75 mx-auto">
+          <tr>
+            <th>Nome</th>
+            <th>Profissão</th>
+            <th>Local</th>
+          </tr>
+          <tr>
+            <td>Priscila</td>
+            <td>Cantora</td>
+            <td>Rio de Janeiro</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>Ator</td>
+            <td>São Paulo</td>
+          </tr>
+          <tr>
+            <td>Antonia</td>
+            <td>Psicóloga</td>
+            <td>Japão</td>
+          </tr>
+          <tr>
+            <td>Vania</td>
+            <td>Arquiteta</td>
+            <td>Minas Gerais</td>
+          </tr>
+          <tr>
+            <td>Maurílio</td>
+            <td>Enfermeiro</td>
+            <td>Inglaterra</td>
+          </tr>
+          <tr>
+            <td>Silvana</td>
+            <td>Juíza</td>
+            <td>França</td>
+          </tr>
+        </table>
+
+        FORMULÁRIO /////////////
+
+
+        <div class="border border-secondary w-50 mx-auto p-5">
+          <form action="" method="">
+            <div>
+              <div>
+                <label class="form-label">Nome:</label>
+                <input autofocus class="form-control" type="text" name="nome" />
+              </div>
+              <div>
+                <label class="form-label">E-mail:</label>
+                <input class="form-control" type="mail" name="email" />
+              </div>
+              <div>
+                <label class="form-label">Nome:</label>
+                <select class="form-control" type="text" name="periodo" />
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+                </select>
+              </div>
+
+              <div>
+
+                <input class="form-check-inline" type="radio" checked id="recebeMail" name="recebeMail" value="sim">
+                <label class="form-label">sim</label>
+
+                <input class="form-check-inline" type="radio" id="recebeMail" name="recebeMail" value="nao">
+                <label class="form-label">não</label>
+              </div>
+              <div>
+                <label class="form-label fw-bold mt-3">Deixe seu comentário:</label>
+                <textarea class="form-control" name="coment" id="" cols="30" rows="5"></textarea>
+              </div>
+              <div>
+                <button class="btn btn-secondary">Confirmar</button>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+        <h2>Editando conteúdo na própria página</h2>
+        <div id="tasklist" class="w-25 m-5 mx-auto border border-primary rounded" style="min-height:200px;">
+          <p class="fw-bold fs-4 p-4">Lista de Tarefas</p>
+          <ol contenteditable id="tarefas">
+            <li>...</li>
+          </ol>
+          <button class="btn btn-secondary d-block mx-auto">Criar Lista</button>
+        </div>
+
+        <h3>Parágrafos</h3>
+
+        <p contenteditable>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus urna et velit faucibus, id mattis eros imperdiet. Vestibulum id leo metus. Pellentesque ac nisl nec nulla elementum lobortis ut eu ex. In vel bibendum nunc. Aenean at porta turpis, sit amet aliquet felis. Ut et orci fermentum, porttitor felis vitae, venenatis tortor. Suspendisse eu elementum ante. Sed vitae eros odio. Donec semper egestas justo vitae blandit.
+        </p>
+        <p> Vivamus nec est molestie, accumsan dolor non, commodo erat. Nam neque magna, egestas vel metus feugiat, sollicitudin luctus justo. Curabitur ut consequat neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam dignissim quam dui, sed varius sem sodales a. Sed eu euismod elit. Curabitur vestibulum aliquam lorem, fringilla viverra urna elementum vel.
+        </p>
+        <hr>
+        <h3>texto pré-formtado</h3>
+        <pre>"Deus não joga dados"
+        Albert Einstein.
+      </pre>
+      </article>
+      <article>
+        <h2>Listas Ordenadas e com Marcadores</h2>
+        <h3>Liistas Ordenadas</h3>
+        <ol type="a">
+          <li>Alemanha</li>
+          <li>França</li>
+          <li>Espanha</li>
+          <li>Suécia</li>
+        </ol>
+        <h3>Listas com Marcadores</h3>
+        <ul type="circle">
+          <li>Amarelo</li>
+          <li class="orange">Laranja</li>
+          <li>Verde</li>
+          <li>Lilás</li>
+        </ul>
+      </article>
+      <img src="" alt="">
+    </section>
+  </div>
+  <footer>
+    <p>&copy;2021 - Todos os direitos reservados </p>
+  </footer>
+
+</body>
+
+</html>
+<script>
+  $().ready(function () {
+
+    $(".menu-hb").click(function () {
+      $("nav").slideToggle();
+    })
+  })
+</script>
+
+<div>
+  <p class="ajuste"></p>
+  <p class="ajuste"></p>
+  <p class="ajuste"></p>
+  <p class="ajuste"></p>
+  <p class="ajuste"></p>
+  <h2 id="titulo" class="info"></h2>
+</div>

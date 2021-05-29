@@ -262,6 +262,18 @@ div.c2 {
   color: white;
   margin: 10px 0;
 }
+#anima {
+  border: 2px dashed #999;
+  height: 400px;
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+#anima * {
+  position: absolute;
+  left: 120%;
+}
 div.c1 span,
 div.c2 span {
   display: block;
